@@ -7,7 +7,7 @@ pipeline {
     stage('Git checkout') {
       steps {
          echo 'This is for cloning the gitrepo'
-         git branch: 'master', url: ''
+         git 'https://github.com/AKSHADA-TECH-PIXEL/Project3.git'
                           }
             }
     stage('Create a Package') {
